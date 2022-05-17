@@ -1,5 +1,5 @@
 {
-  "name": "vite-electron-svelte-ts",
+  "name": "allofthe",
   "version": "0.1.0",
   "description": "A Electron application create by Vite",
   "main": "./dist/main/main.cjs.js",
