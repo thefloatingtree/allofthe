@@ -7,14 +7,19 @@ const loadURL = import.meta.env.PROD
 
 function createWindow() {
   const mainWindow = new BrowserWindow({ 
-    width: 800,
-    height: 600,
-    icon: path.resolve(__dirname, '../../public/icons/256x256.png')
+    width: 1600,
+    height: 800,
+    icon: path.resolve(__dirname, '../../public/icons/256x256.png'),
+    webPreferences: {
+      webSecurity: false
+    },
+    
   })
 
   mainWindow.loadURL(loadURL)
+  mainWindow.removeMenu()
 
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 }
 
 app.whenReady().then(() => {
