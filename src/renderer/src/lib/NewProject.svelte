@@ -1,6 +1,6 @@
 <script lang="ts">
     import { ProjectModel } from "../models/Project";
-    import { activeProject, projectsStore } from "../stores/projects";
+    import { activeProject, projectsStore } from "../stores/store";
     import Portal from "svelte-portal";
     import { clickOutside } from "../lib/clickOutside";
 

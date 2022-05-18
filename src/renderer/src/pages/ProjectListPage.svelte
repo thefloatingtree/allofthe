@@ -1,7 +1,7 @@
 <script>
     import Project from "../lib/Project.svelte";
     import NewProject from "../lib/NewProject.svelte";
-    import { projectsStore } from "../stores/projects";
+    import { projectsStore } from "../stores/store";
 </script>
 
 <div class="flex flex-col space-y-6">
