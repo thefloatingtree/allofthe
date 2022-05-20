@@ -78,7 +78,7 @@
                     <div class="card shadow-xl image-full">
                         <figure>
                             <video>
-                                <source src={file.path} type="video/mp4" />
+                                <source src={file.path + "#t=30"} type="video/mp4" />
                                 <track kind="captions" />
                             </video>
                         </figure>

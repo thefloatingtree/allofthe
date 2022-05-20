@@ -69,7 +69,7 @@
         <div class="w-2/5 space-y-3">
             {#if $activeProject.notes[$activeVideo.path]}
                 {#each $activeProject.notes[$activeVideo.path] as note}
-                    <Note {note} />
+                    <Note on:seek={(e) => { currentTime = e.detail.time }} {note} />
                 {/each}
             {/if}
         </div>
